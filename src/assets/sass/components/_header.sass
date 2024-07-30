@@ -1,11 +1,11 @@
 .header
-    position: absolute
     width: 100vw
     display: flex
     flex-direction: row
     justify-content: space-around
-    margin: $XS
-    margin-top: $M
+    align-items: center
+    margin: 0 $XS
+    padding: $XXS 0
     font-family: $font
     color: $color_light
 
@@ -15,7 +15,7 @@
         flex-direction: row
         gap: $XXL
         justify-content: center
-        
+
         &__title
             font-size: $M
 
@@ -26,10 +26,24 @@
             list-style: none
             align-items: center
 
+            &__item
+                &__link
+                    color: $color_light
+                    cursor: pointer
+
+                    &:hover
+                        opacity: 80%
     &__access
         width: 40%
         display: flex
         flex-direction: row
         gap: $L
         justify-content: start
+        align-items: center
 
+        &__login
+            color: $color_light
+            cursor: pointer
+
+            &:hover
+                opacity: 80%

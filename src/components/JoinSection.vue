@@ -1,24 +1,24 @@
 <template>
   <section class="join">
-    <img class="join__figure join__figure--1" src="../assets/img/figure_1.svg" alt="figure background" />
-    <img class="join__figure join__figure--2" src="../assets/img/figure_2.svg" alt="figure background" />
     <Header />
     <div class="join__content">
       <article class="join__content__info">
-        <h3>Join Us</h3>
-        <h1>25k+ STUDENTS TRUST US</h1>
-        <p>Every day brings with it a fresh set of learning possibilities</p>
-        <div>
-          <button>
-            Join us
-          </button>
-          <button>
-            Learn More
-          </button>
+        <h3 class="join__content__info__subtitle">Join Us</h3>
+        <h1 class="join__content__info__title">25k+ STUDENTS <br>TRUST US</h1>
+        <p class="join__content__info__paragraph">Every day brings with it a fresh set of<br> learning possibilities</p>
+        <div class="join__content__info__buttons">
+          <Button button-text="Join us" link="#"/>
+          <Button button-text="Learn More" fill="true" link="#"/>
         </div>
       </article>
       <article class="join__content__image">
-
+        <img class="join__content__image__photo" src="../assets/img/image_woman.png" alt="Imagen de una mujer">
+        <img class="join__content__image__bigellipse" src="../assets/img/ellipse_1.svg" alt="">
+        <img class="join__content__image__graphic1" src="../assets/img/graphic_1.svg" alt="">
+        <img class="join__content__image__graphic2" src="../assets/img/graphic_2.png" alt="">
+        <img class="join__content__image__graphic3" src="../assets/img/graphic_3.png" alt="">
+        <img class="join__content__image__ellipse" src="../assets/img/ellipse_2.svg" alt="">
+        <img class="join__content__image__wave" src="../assets/img/wave.svg" alt="">
       </article>
     </div>
   </section>
@@ -27,10 +27,12 @@
 
 <script>
 import Header from '@/components/Header.vue';
+import Button from '@/components/Button.vue';
 
 export default {
   components: {
-    Header
+    Header,
+    Button
   }
 }
 </script>

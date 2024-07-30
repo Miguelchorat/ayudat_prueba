@@ -1,25 +1,89 @@
 .join
     height: 100vh
     width: 100vw
-    position: relative
-
-    &__figure
-        
-        &--1
-            position: absolute
-            top: 0
-            left: 0
-            height: 95%
-
-        &--2
-            position: absolute
-            top: 0
-            right: 0
-            height: 45%
+    background-image: url('../img/figure_1.svg'), url('../img/figure_2.svg')
+    background-position: left top, right top
+    background-size: 55%, 45%
+    background-repeat: no-repeat
 
     &__content
         height: 100%
         width: 100%
         display: flex
         flex-direction: row
-        z-index: 1
+        align-items: center
+        color: $color_light
+        font-family: $font
+
+        &__info
+            height: 100%
+            width: 100%        
+            padding-left: calc($XXXL * 2)
+            display: flex
+            flex-direction: column
+            justify-content: center
+            gap: $M
+
+            &__title
+                font-size: $XXL
+
+            &__paragraph
+                font-size: $S
+                line-height: $S
+
+            &__buttons
+                display: flex
+                flex-direction: row
+                gap: $S
+                
+
+        &__image
+            height: 100%
+            width: 100%
+            display: flex
+            align-items: flex-start
+            justify-content: center
+            padding-right: calc($XXXL * 2)
+            position: relative
+
+            &__photo
+                height: 85%
+                z-index: 10
+
+            &__bigellipse
+                position: absolute
+                top: 20%
+                left: 5%
+                width: 55%
+                z-index: 1
+
+            &__graphic1
+                position: absolute
+                top: 64%
+                left: 5%                
+                z-index: 2
+            
+            &__graphic2
+                position: absolute
+                top: 10%
+                left: -10%                
+                z-index: 2
+
+            &__graphic3
+                position: absolute
+                bottom: 7%
+                right: 25%                
+                z-index: 11
+
+            &__ellipse
+                position: absolute
+                top: 45%
+                left: 2%                
+                z-index: 2
+
+            &__wave
+                position: absolute
+                top: 47%
+                right: 35%                
+                z-index: 2
+            
