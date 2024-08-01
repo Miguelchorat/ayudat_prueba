@@ -1,0 +1,150 @@
+.cardSale
+    position: relative
+    background-color: $color_light
+    color: $color_dark_primary
+    display: flex
+    flex-direction: column
+    align-items: center
+    gap: $XS
+    max-width: 300px
+
+    &__image
+        width: 100%
+        min-height: 235px
+        object-fit: cover
+
+    &__label
+        position: absolute
+        top: $XS
+        left: $XS
+        background-color: $color_line    
+        font-family: $font   
+        color: $color_light
+        font-size: $XXS
+        padding: $XXXS/2 $XXS
+        border-radius: $XXXS/2
+
+    &__subtitle
+        color: $color_primary
+        font-size: $XS
+        align-self: start
+        padding-left: $XS
+
+    &__title
+        font-size: $XS
+        align-self: start
+        padding-left: $XS
+
+    &__paragraph
+        font-size: $XXS
+        align-self: start
+        color: $color_dark_secondary
+        padding: 0 $XS
+
+    &__score
+        display: flex
+        flex-direction: row
+        background-color: $color_bg_secondary
+        padding: $XXXS
+        border-radius: $XS
+        gap: $XXXS
+        position: absolute
+        top: 49%
+        right: $XS
+
+        &__text
+            color: $color_light
+            font: $font
+            font-size: $XXS
+            font-weight: 400
+    
+    &__sales
+        display: flex
+        flex-direction: row
+        gap: $XXXS
+        font-size: $XXS
+        color: $color_dark_secondary
+        align-self: start
+        padding: 0 $XS
+
+    &__price
+        display: flex
+        flex-direction: row
+        gap: $XXXS
+        font-size: $XXS
+        font-weight: 600
+        padding: 0 $XS
+        align-self: start
+
+        &__old
+            color: $color_placeholder
+
+        &__new
+            color: $color_mark
+
+    &__link
+        position: absolute
+        top: 35%
+        left: 0
+        width: 100%
+        display: flex
+        flex-direction: row
+        gap: $XS
+        justify-content: center
+
+    &__favorite        
+        background-color: $color_light
+        border-radius: 50%
+        padding: $XXXS
+        display: flex        
+        justify-content: center
+        align-items: center
+
+        &:hover
+            opacity: 90%
+
+    &__buy
+        background-color: $color_light
+        border-radius: 50%
+        padding: $XXXS
+        display: flex        
+        justify-content: center
+        align-items: center
+
+        &:hover
+            opacity: 90%
+    &__eye
+        background-color: $color_light
+        border-radius: 50%
+        padding: $XXXS
+        display: flex        
+        justify-content: center
+        align-items: center
+
+        &:hover
+            opacity: 90%
+
+    &__learn
+        margin-bottom: $XS
+        border: 1px solid $color_primary
+        border-radius: $M
+        padding: $XXS
+        display: flex
+        flex-direction: row
+        gap: $XXXS
+        align-items: center
+        justify-content: center
+        color: $color_primary
+        align-self: start
+        margin-left: $XS
+        font-weight: 700
+        font-size: $XXS
+        cursor: pointer
+
+        &__icon
+            fill: green !important
+            
+        &:hover
+            color: $color_light
+            background-color: $color_primary
+            fill: $color_light
