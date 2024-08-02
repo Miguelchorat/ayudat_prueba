@@ -6,6 +6,7 @@
     <PackageSection />
     <ReviewSection />
     <FaqSection />
+    <NewsletterSection />
   </main>
 </template>
 <script>
@@ -16,6 +17,7 @@ import CourseSection from '@/components/CourseSection.vue';
 import PackageSection from '@/components/PackageSection.vue';
 import ReviewSection from '@/components/ReviewSection.vue';
 import FaqSection from '@/components/FaqSection.vue';
+import NewsletterSection from '@/components/NewsletterSection.vue';
 
 export default {
   components: {
@@ -24,7 +26,8 @@ export default {
     CourseSection,
     PackageSection,
     ReviewSection,
-    FaqSection
+    FaqSection,
+    NewsletterSection
   }
 }
 </script>

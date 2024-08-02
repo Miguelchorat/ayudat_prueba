@@ -1,0 +1,39 @@
+.footer
+    height: 100%
+    width: 100%
+    display: flex
+    flex-direction: row
+    background-color: $color_bg_footer
+    justify-content: center
+    gap: $XXL*1.4
+
+    &__list
+        list-style: none
+        display: flex
+        flex-direction: column
+        margin-top: $L
+        gap: $S        
+
+        &__item
+            display: flex
+            flex-direction: row
+            gap: $XS
+            align-items: center
+
+            &__title                
+                color: $color_dark_primary
+
+            &__link
+                color: $color_dark_primary
+                border-bottom: 1px solid transparent
+                font-size: $XXS
+                font-weight: 500
+
+                &:hover
+                    border-bottom: 1px solid $color_dark_primary
+
+            &__paragraph                
+                color: $color_dark_primary
+                font-size: $XXS
+                font-weight: 500
+

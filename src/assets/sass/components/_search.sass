@@ -1,0 +1,38 @@
+.search
+    width: 100%
+    min-height: 50px
+    display: flex
+    flex-direction: row
+    background-color: $color_light
+    margin: $XS
+    border-radius: $XXXS/2    
+    align-items: center
+    max-width: $XXXL*8
+
+    &__input        
+        height: 100%
+        width: 100%
+        font-size: $XS
+        color: $color_dark_primary
+        padding: 0 $XS
+        border: none
+        outline: none
+        background-color: $color_light
+        border-radius: $XXXS/2
+
+        &:focus   
+
+        &::placeholder
+            color: $color_placeholder
+
+    &__button
+        height: 48px
+        border-radius: 0 $XXXS/2 $XXXS/2 0
+        background-color: $color_primary
+        padding: calc($XS - 1px)
+        margin-right: 1px
+        color: $color_light
+
+        &:hover
+            background-color: $color_primary-hover
+
