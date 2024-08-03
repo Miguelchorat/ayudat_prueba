@@ -1,6 +1,5 @@
 <template>
   <section class="join">
-    <Header />
     <div class="join__content">
       <article class="join__content__info">
         <h3 class="join__content__info__subtitle">Join Us</h3>
@@ -26,12 +25,10 @@
 
 
 <script>
-import Header from '@/components/Header.vue';
 import Button from '@/components/Button.vue';
 
 export default {
   components: {
-    Header,
     Button
   }
 }

@@ -1,5 +1,5 @@
 <template>
-  <main class="home">
+  <main class="home" ref="container">
     <JoinSection />
     <PopularSection />
     <CourseSection />

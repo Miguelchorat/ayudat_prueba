@@ -20,8 +20,6 @@
         background-color: $color_light
         border-radius: $XXXS/2
 
-        &:focus   
-
         &::placeholder
             color: $color_placeholder
 
@@ -35,4 +33,12 @@
 
         &:hover
             background-color: $color_primary-hover
+
+    &__message
+        color: $color_line
+        font-family: $font
+
+.invalid-email::placeholder
+    color: red
+    opacity: 65%
 

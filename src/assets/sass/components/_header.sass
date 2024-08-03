@@ -1,13 +1,17 @@
 .header
-    width: 100vw
+    position: absolute
+    top: 0
+    left: 0
+    height: calc($XXL * 1.2)
+    width: 100%
     display: flex
     flex-direction: row
     justify-content: space-around
     align-items: center
-    margin: 0 $XS
     padding: $XXS 0
     font-family: $font
     color: $color_light
+    z-index: 999
 
     &__nav
         width: 60%
@@ -50,3 +54,30 @@
 
             &:hover
                 border-bottom: 1px solid $color_light
+
+    &__scroll
+        background-color: $color_bg
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px
+        margin-top: -2px
+        position: fixed
+        top: 0
+        left: 0
+        animation: slideIn 0.5s ease-in-out alternate
+
+        .header
+
+            &__nav
+
+                &__title
+                    cursor: pointer
+                    
+            &__access
+                justify-content: center
+
+@keyframes slideIn
+    from
+        transform: translateY(-100%)
+
+    to
+        transform: translateY(0)
+
