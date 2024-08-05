@@ -18,7 +18,7 @@
 
         &__info
             height: 100%
-            width: 100%        
+            width: 100%
             padding-left: calc($XXXL * 2)
             display: flex
             flex-direction: column
@@ -36,55 +36,88 @@
                 display: flex
                 flex-direction: row
                 gap: $S
-                
 
         &__image
             height: 100%
             width: 100%
             display: flex
-            align-items: flex-start
+            align-items: center
             justify-content: center
-            padding-right: calc($XXXL * 2)
+            padding-right: calc($XXXL * 1.15)
             position: relative
 
             &__photo
                 height: 85%
                 z-index: 10
 
-            &__bigellipse
-                position: absolute
-                top: 20%
-                left: 5%
-                width: 55%
-                z-index: 1
+@media (max-width: 1570px)
+    .join
+        background-size: 65%, 35%
 
-            &__graphic1
-                position: absolute
-                top: 64%
-                left: 5%                
-                z-index: 2
-            
-            &__graphic2
-                position: absolute
-                top: 10%
-                left: -10%                
-                z-index: 2
+        &__content
 
-            &__graphic3
-                position: absolute
-                bottom: 7%
-                right: 25%                
-                z-index: 11
+            &__info
+                padding-left: $XXXL
 
-            &__ellipse
-                position: absolute
-                top: 45%
-                left: 2%                
-                z-index: 2
+            &__image
+                padding-right: $S
 
-            &__wave
-                position: absolute
-                top: 47%
-                right: 35%                
-                z-index: 2
-            
+                &__photo
+                    height: 85%
+
+@media (max-width: 1350px)
+    .join
+        background-size: 75%, 25%
+
+        &__content
+                      
+            &__info
+
+                &__title
+                    font-size: $L
+
+            &__image
+                padding-right: 0
+
+@media (max-width: 1250px)
+    .join
+        background-size: 75%, 0%
+
+        &__content
+                      
+            &__info
+
+                &__title
+                    font-size: $L
+
+                &__paragraph
+                    font-size: $XS
+                    line-height: $XS
+
+            &__image
+                padding-right: 0
+
+@media (max-width: 1190px)
+    .join
+
+        &__content
+                      
+            &__image
+                height: 75%
+                padding-right: 0
+
+
+@media (max-width: 1000px)
+    .join
+        background-size: 0%,95%
+
+        &__content
+
+            &__info                
+                justify-content: center
+                align-items: center
+                padding-left: $XL
+                padding-left: 0
+
+            &__image
+                display: none

@@ -12,7 +12,8 @@
         <div class="header__access">
             <a class="header__access__login" href="#">Login</a>
             <Button button-text="JOIN US &nbsp; 🡢" link="#" />
-        </div>
+        </div>        
+        <img class="header__menu" src="../assets/img/menu.svg" alt="#" @click="listenMenu">
     </header>
 </template>
 
@@ -51,6 +52,9 @@ export default {
                     behavior: 'smooth'
                 });
             }
+        },
+        listenMenu(){
+            this.$emit('listenMenu')
         }
     }
 }
