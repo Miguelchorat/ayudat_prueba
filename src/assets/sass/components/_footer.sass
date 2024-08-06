@@ -1,20 +1,24 @@
 .footer
-    height: 100%
+    height: max-content
+    min-height: 100%
     width: 100%
     display: flex
     flex-direction: row
     background-color: $color_bg_footer
     justify-content: center
+    flex-wrap: wrap
     gap: $XXL*1.4
 
     &__list
+        width: max-content
         list-style: none
         display: flex
         flex-direction: column
-        margin-top: $L
+        margin: $L
         gap: $S        
 
         &__item
+            width: 100%
             display: flex
             flex-direction: row
             gap: $XS
@@ -36,4 +40,15 @@
                 color: $color_dark_primary
                 font-size: $XXS
                 font-weight: 500
+
+@media (max-width: 500px)
+    .footer
+        gap: $XS
+
+        &__list
+            width: 100%
+
+            &__item
+                justify-content: center
+        
 

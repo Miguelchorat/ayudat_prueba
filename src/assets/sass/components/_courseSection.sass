@@ -3,7 +3,8 @@
     width: 100vw
     display: flex
     flex-direction: row
-    gap: $XXXL*2
+    gap: $XXXL*1.25
+    justify-content: center
     align-items: center
     padding-top: $XL
     color: $color_light
@@ -11,11 +12,10 @@
 
     &__image
         height: 100%
-        width: 100%
+        width: 60%
         display: flex
-        align-items: flex-start
         justify-content: center
-        padding-left: calc($XXXL * 2)
+        align-items: center
         position: relative
 
         &__photo
@@ -24,8 +24,7 @@
 
     &__info
         height: 100%
-        width: 100%
-        padding-right: calc($XXXL * 2)
+        width: 40%
         display: flex
         flex-direction: column
         justify-content: center
@@ -62,3 +61,61 @@
 
                 &:hover
                     border-bottom: 2px solid $color_primary
+
+
+
+@media (max-width: 1570px)
+    .course        
+
+        &__info
+
+        &__image
+
+            &__photo
+                height: 75%
+
+@media (max-width: 1350px)
+    .course
+        gap: $XXXL
+                      
+        &__info
+
+        &__image
+
+            &__photo
+                height: 65%
+
+@media (max-width: 1250px)
+    .course
+        gap: $XL
+                      
+        &__info
+            width: 40%
+        &__image
+            width: 60%
+            &__photo
+                height: 55%
+
+
+@media (max-width: 1000px)
+    .course
+        padding-top: $M       
+        height: 80vh   
+
+        &__info                
+            justify-content: center
+            align-items: center
+            padding-left: $XL
+            padding-left: 0
+
+            &__title
+                text-align: center
+
+            &__paragraph
+                text-align: center     
+
+            &__link
+                justify-content: center      
+                
+        &__image
+            display: none
