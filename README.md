@@ -52,3 +52,7 @@ Se desarrollaron componentes simples, como una tarjeta de reseña individual, y 
 Se aplicó la metodología BEM para organizar las clases CSS, asegurando un estilo consistente y facilitando el mantenimiento del código. Además, se implementaron mecanismos de comunicación entre componentes padre e hijo, utilizando variables para sincronizar el comportamiento de elementos como el header (que se desplazaba junto con el contenido) y el menú móvil (que se desplegaba al hacer clic).
 
 Y para garantizar una experiencia amigable en diferentes dispositivos, se diseñó la web con un enfoque responsive, adaptando el diseño a distintas resoluciones de pantalla. Se utilizaron unidades relativas (em, rem, vh, vw) y media queries para asegurar que el contenido se ajustara correctamente a cualquier tamaño de pantalla.
+
+## Despliegue
+
+Una vez finalizado el desarrollo, la aplicación se desplegó en GitHub Pages para facilitar la visualización y el acceso público. Esto permitió compartir la web de manera rápida y sencilla, facilitando la obtención de feedback y la demostración del proyecto.
