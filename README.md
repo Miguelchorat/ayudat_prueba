@@ -55,4 +55,4 @@ Y para garantizar una experiencia amigable en diferentes dispositivos, se diseñ
 
 ## Despliegue
 
-Una vez finalizado el desarrollo, la aplicación se desplegó en GitHub Pages para facilitar la visualización y el acceso público. Esto permitió compartir la web de manera rápida y sencilla, facilitando la obtención de feedback y la demostración del proyecto.
+Una vez finalizado el desarrollo, se creó una nueva rama en GitHub para alojar la carpeta `dist` que contiene los archivos de producción de la aplicación. Esta carpeta se genera ejecutando el comando `npm run build`, el cual compila el código fuente en un formato optimizado para su despliegue. Posteriormente, se configuró GitHub Pages para servir el contenido de esta rama, lo que permitió desplegar la aplicación de manera rápida y sencilla. Esta acción facilitó la visualización y el acceso público de la web, permitiendo compartirla con facilidad.
